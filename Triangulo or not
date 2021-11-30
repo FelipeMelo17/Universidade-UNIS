@@ -1,0 +1,28 @@
+
+a = float(input("Digite o valor do lado A: "))
+b = float(input("Digite o valor do lado B: "))
+c = float(input("Digite o valor do lado C: "))
+area = a * b / 2
+b_c = b-c
+if b_c < 0:
+    b_c = b_c * -1
+
+a_c = a-c
+if a_c < 0:
+    a_c = a_c * -1
+
+a_b = a-b
+if a_b < 0:
+    a_b = a_b * -1
+
+if ( b_c < a < b + c ) and ( a_c < b < a + c ) and ( a_b < c < a + b):
+    if a == b == c:
+        print("\nÉ um trinagulo.")
+    elif (b == c != a) or (a == c != b) or (a == b != c):
+        print("\nÉ um trinagulo.")
+    else:
+        print("\nÉ um trinagulo.")
+else:
+    print("Não é um Triângulo.")
+
+print("A área do triangulo é: ", area)
