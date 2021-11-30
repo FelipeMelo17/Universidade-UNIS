@@ -1,0 +1,17 @@
+a = int(input('Digite um número:\n> '))
+print('\nEntre 1 e', a, 'são primos os números:\n')
+b =2
+
+while b <= a - 1:
+    y = 0
+    z = 1
+
+    while z < 100:
+        if b % z == 0:
+            y += 1
+        z += 1
+
+    if y == 2:
+        print(b)
+
+    b += 1
