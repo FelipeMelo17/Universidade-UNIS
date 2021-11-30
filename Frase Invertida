@@ -1,0 +1,4 @@
+frase = str(input('Digite uma frase: '))
+print(' A frase invertida fica:'.format(frase))
+string = frase[::-1]
+print(format(string))
